@@ -1,0 +1,103 @@
+/* Global Styles */
+body {
+    font-family: 'Merryweather', serif; /* Merryweather font */
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+  
+  h1, h2 {
+    margin: 0;
+    font-family: 'Merryweather', serif; /* Merryweather font */
+    color: burlywood;
+  }
+  
+  /* Header Styles */
+  header {
+    background-color: lightseagreen;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  /* Main Content Styles */
+  main {
+    padding: 20px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr;
+    max-width: 500px; /* Adjust the max-width as needed */
+    width: 100%;
+    margin: 0 auto; /* Center the content */
+  }
+  
+  /* Form Styles */
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    font-size: 16px;
+    border-radius: 20px;
+    background-color: #f8f8f8; /* Light gray background color */
+  }
+  
+  .password-field {
+    position: relative;
+  }
+  
+  .password-field .eye {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+  .password-field .eye::before {
+    content: "\f06e";
+    font-family: 'Font Awesome 5 Free';
+    font-size: 18px;
+  }
+  
+  .password-field .eye.active::before {
+    content: "\f070";
+  }
+  
+  button[type="submit"] {
+    padding: 10px;
+    background-color: lightseagreen;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  
+  /* Media Queries */
+  @media screen and (max-width: 600px) {
+    main {
+      grid-template-columns: 1fr;
+    }
+  
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      padding: 6px;
+      font-size: 14px;
+    }
+  
+    button[type="submit"] {
+      padding: 8px;
+      font-size: 14px;
+    }
+  }
+  
